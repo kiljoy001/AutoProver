@@ -1,0 +1,27 @@
+DIGEST fd6531066a7f5450b05c61f7b3310e6b
+Ftest_pair
+R15:28 Coq.Lists.List <> <> lib
+R38:50 Coq.Lists.List ListNotations <> mod
+def 65:71 <> BotName
+R76:78 Coq.Init.Datatypes <> nat ind
+def 92:99 <> NVSEntry
+R104:106 Coq.Init.Datatypes <> nat ind
+def 110:165 <> Unnamed_thm
+R115:122 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R136:138 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R128:135 test_pair <> NVSEntry def
+binder 123:124 <> e':1
+R139:140 Coq.Lists.List <> In def
+R150:150 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R157:158 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R165:165 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R151:151 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R153:154 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R156:156 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R159:159 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R161:162 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R164:164 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R142:142 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R144:145 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R148:148 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R146:147 test_pair <> e':1 var

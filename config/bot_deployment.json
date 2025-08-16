@@ -1,0 +1,197 @@
+{
+  "deployment": {
+    "name": "AutoProver Bot Network",
+    "version": "1.0.0",
+    "environment": "production"
+  },
+  
+  "infrastructure": {
+    "shared_memory_path": "/dev/shm/autoprover",
+    "shared_memory_size": "100MB",
+    "max_bots": 64,
+    "polling_interval_ms": 1,
+    "heartbeat_timeout_sec": 30
+  },
+  
+  "safety_configuration": {
+    "enforce_no_admits": true,
+    "enforce_no_axioms": true,
+    "allowed_axioms": [
+      "functional_extensionality",
+      "propositional_extensionality"
+    ],
+    "forbidden_tactics": [
+      "admit", "Admit", "Admitted",
+      "sorry", "Sorry",
+      "axiom", "Axiom",
+      "Parameter", "Variable"
+    ],
+    "verification_timeout_sec": 30,
+    "require_coq_compilation": true,
+    "mathematical_soundness_required": true
+  },
+  
+  "bot_executables": {
+    "coqgym": {
+      "enabled": true,
+      "path": "/usr/local/bin/python3",
+      "args": ["/home/scott/Repo/AutoProver/src/bots/coqgym_bot.py"],
+      "capabilities": ["tactic_prediction", "goal_synthesis", "ml_guidance"],
+      "resource_limits": {
+        "memory_mb": 4096,
+        "cpu_cores": 2,
+        "timeout_sec": 10
+      }
+    },
+    
+    "proverbot9001": {
+      "enabled": true,
+      "path": "/usr/local/bin/python3",
+      "args": ["/home/scott/Repo/AutoProver/src/bots/proverbot9001_bot.py"],
+      "capabilities": ["complete_proofs", "automated_proving", "end_to_end"],
+      "resource_limits": {
+        "memory_mb": 8192,
+        "cpu_cores": 4,
+        "timeout_sec": 30
+      }
+    },
+    
+    "tactictoe": {
+      "enabled": true,
+      "path": "/usr/local/bin/python3",
+      "args": ["/home/scott/Repo/AutoProver/src/bots/tactictoe_bot.py"],
+      "capabilities": ["tactic_synthesis", "ml_guidance", "smart_selection"],
+      "resource_limits": {
+        "memory_mb": 2048,
+        "cpu_cores": 1,
+        "timeout_sec": 5
+      }
+    },
+    
+    "coqhammer": {
+      "enabled": true,
+      "path": "/usr/local/bin/python3",
+      "args": ["/home/scott/Repo/AutoProver/src/bots/coqhammer_bot.py"],
+      "capabilities": ["automated_theorem_proving", "smt_integration", "external_provers"],
+      "resource_limits": {
+        "memory_mb": 4096,
+        "cpu_cores": 2,
+        "timeout_sec": 60
+      }
+    },
+    
+    "custom_solver": {
+      "enabled": false,
+      "path": "/path/to/your/custom/solver",
+      "args": ["--custom-args"],
+      "capabilities": ["domain_specific"],
+      "resource_limits": {
+        "memory_mb": 1024,
+        "cpu_cores": 1,
+        "timeout_sec": 15
+      }
+    }
+  },
+  
+  "deployment_targets": {
+    "local_development": {
+      "description": "Local development machine",
+      "enabled": true,
+      "shared_memory_path": "/dev/shm/autoprover_dev",
+      "bot_instances": {
+        "coqgym": 2,
+        "proverbot9001": 1,
+        "tactictoe": 2,
+        "coqhammer": 1
+      }
+    },
+    
+    "production_server": {
+      "description": "High-performance server deployment",
+      "enabled": false,
+      "shared_memory_path": "/dev/shm/autoprover_prod",
+      "bot_instances": {
+        "coqgym": 4,
+        "proverbot9001": 2,
+        "tactictoe": 3,
+        "coqhammer": 2
+      }
+    },
+    
+    "cloud_cluster": {
+      "description": "Distributed cloud deployment",
+      "enabled": false,
+      "nodes": [
+        {
+          "hostname": "autoprover-node-1",
+          "ip": "10.0.1.10",
+          "role": "orchestrator",
+          "bots": ["coqgym", "proverbot9001"]
+        },
+        {
+          "hostname": "autoprover-node-2", 
+          "ip": "10.0.1.11",
+          "role": "worker",
+          "bots": ["tactictoe", "coqhammer"]
+        }
+      ]
+    },
+    
+    "integration_targets": {
+      "brunnen_g_cli": {
+        "description": "Integration with Brunnen-G CLI system",
+        "enabled": true,
+        "endpoint": "unix:///tmp/brunnen_g_autoprover.sock",
+        "auth_method": "yubikey_signature"
+      },
+      
+      "ghostdag_complete": {
+        "description": "Integration with GhostDAG hosting platform",
+        "enabled": true,
+        "endpoint": "http://localhost:8080/ghostdag/autoprover",
+        "auth_method": "nvs_registry"
+      },
+      
+      "solr_backend": {
+        "description": "Integration with Solr proof search",
+        "enabled": true,
+        "endpoint": "http://localhost:8983/solr/coq-stdlib-complete",
+        "index_results": true
+      }
+    }
+  },
+  
+  "usage_modes": {
+    "interactive_proving": {
+      "description": "Interactive theorem proving assistant",
+      "enabled": true,
+      "interface": "command_line",
+      "auto_apply_tactics": false,
+      "show_proof_steps": true
+    },
+    
+    "batch_verification": {
+      "description": "Batch verification of Coq files",
+      "enabled": true,
+      "input_directory": "/path/to/coq/files",
+      "output_directory": "/path/to/verified/files",
+      "parallel_jobs": 8
+    },
+    
+    "proof_search": {
+      "description": "Automated proof search and completion",
+      "enabled": true,
+      "search_depth": 10,
+      "time_limit_sec": 300,
+      "use_solr_hints": true
+    },
+    
+    "library_development": {
+      "description": "Assist in developing verified libraries",
+      "enabled": true,
+      "target_library": "crypto_primitives",
+      "auto_generate_lemmas": true,
+      "extract_to_ocaml": true
+    }
+  }
+}

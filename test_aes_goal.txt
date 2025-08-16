@@ -1,0 +1,2 @@
+forall n : nat, n + 0 = n
+forall (s0 s4 : list nat), length s4 >= 25

@@ -1,0 +1,122 @@
+DIGEST d8c7930356232c6d5af18ee152390b8a
+Fautoprover_correctness_simple
+R148:151 Coq.Lists.List <> <> lib
+R169:173 Coq.Arith.Arith <> <> lib
+R191:194 Coq.Bool.Bool <> <> lib
+R212:217 Coq.Strings.String <> <> lib
+R235:237 Coq.micromega.Lia <> <> lib
+R247:259 Coq.Lists.List ListNotations <> mod
+ind 371:377 <> BotType
+constr 393:402 <> CoqGym_CPU
+constr 408:417 <> CoqGym_GPU
+constr 425:437 <> ProverBot9001
+ind 489:500 <> ProcessState
+constr 516:522 <> Spawned
+constr 528:534 <> Running
+constr 542:550 <> Completed
+constr 556:564 <> Timed_out
+constr 570:575 <> Failed
+constr 627:639 <> mkProofResult
+rec 605:615 <> ProofResult
+proj 645:651 <> success
+proj 663:668 <> tactic
+proj 682:691 <> confidence
+proj 702:711 <> bot_source
+R655:658 Coq.Init.Datatypes <> bool ind
+R672:677 Coq.Strings.String <> string ind
+R695:697 Coq.Init.Datatypes <> nat ind
+R715:721 autoprover_correctness_simple <> BotType ind
+constr 779:785 <> mkState
+rec 753:767 <> AutoProverState
+proj 791:801 <> active_bots
+proj 821:842 <> ocaml_bridge_available
+proj 854:874 <> consensus_k_parameter
+R805:808 Coq.Init.Datatypes <> list ind
+R810:816 autoprover_correctness_simple <> BotType ind
+R846:849 Coq.Init.Datatypes <> bool ind
+R878:880 Coq.Init.Datatypes <> nat ind
+prf 998:1021 <> ocaml_bridge_type_safety
+R1043:1057 autoprover_correctness_simple <> AutoProverState rec
+binder 1035:1039 <> state:14
+R1102:1109 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1095:1097 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1072:1093 autoprover_correctness_simple <> ocaml_bridge_available proj
+R1065:1069 autoprover_correctness_simple <> state:14 var
+R1098:1101 Coq.Init.Datatypes <> true constr
+R1139:1141 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R1117:1137 autoprover_correctness_simple <> consensus_k_parameter proj
+R1110:1114 autoprover_correctness_simple <> state:14 var
+def 1350:1361 <> ProcessTuple
+R1392:1394 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1382:1384 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1376:1378 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1370:1372 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1367:1369 Coq.Init.Datatypes <> nat ind
+R1373:1375 Coq.Init.Datatypes <> nat ind
+R1379:1381 Coq.Init.Datatypes <> nat ind
+R1385:1391 autoprover_correctness_simple <> BotType ind
+R1395:1397 Coq.Init.Datatypes <> nat ind
+def 1418:1436 <> valid_process_tuple
+R1446:1457 autoprover_correctness_simple <> ProcessTuple def
+binder 1439:1442 <> proc:15
+R1519:1522 autoprover_correctness_simple <> proc:15 var
+R1477:1477 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1481:1482 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1489:1490 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1497:1498 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1502:1503 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1514:1514 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1536:1539 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1532:1534 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R1546:1549 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+prf 1567:1588 <> process_tuple_validity
+R1609:1620 autoprover_correctness_simple <> ProcessTuple def
+binder 1602:1605 <> proc:17
+R1652:1659 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1628:1646 autoprover_correctness_simple <> valid_process_tuple def
+R1648:1651 autoprover_correctness_simple <> proc:17 var
+R1707:1710 autoprover_correctness_simple <> proc:17 var
+R1665:1665 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1669:1670 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1677:1678 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1685:1686 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1690:1691 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1702:1702 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1722:1724 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R1761:1779 autoprover_correctness_simple <> valid_process_tuple def
+def 1951:1979 <> parallel_execution_terminates
+R1991:1993 Coq.Init.Datatypes <> nat ind
+binder 1982:1987 <> n_bots:19
+R2008:2015 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2030:2037 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2027:2029 Coq.Init.Datatypes <> nat ind
+binder 2016:2023 <> max_time:20
+R2063:2065 Coq.Init.Datatypes <> nat ind
+binder 2046:2059 <> execution_time:21
+R2089:2092 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R2075:2088 autoprover_correctness_simple <> execution_time:21 var
+R2099:2101 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R2093:2098 autoprover_correctness_simple <> n_bots:19 var
+R2102:2109 autoprover_correctness_simple <> max_time:20 var
+prf 2121:2146 <> parallel_execution_bounded
+R2169:2171 Coq.Init.Datatypes <> nat ind
+binder 2160:2165 <> n_bots:22
+R2189:2196 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2185:2187 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R2179:2184 autoprover_correctness_simple <> n_bots:22 var
+R2197:2225 autoprover_correctness_simple <> parallel_execution_terminates def
+R2227:2232 autoprover_correctness_simple <> n_bots:22 var
+R2270:2298 autoprover_correctness_simple <> parallel_execution_terminates def
+def 2617:2640 <> ghostdag_consensus_valid
+R2653:2656 Coq.Init.Datatypes <> list ind
+R2658:2668 autoprover_correctness_simple <> ProofResult rec
+binder 2643:2649 <> results:23
+R2676:2678 Coq.Init.Datatypes <> nat ind
+binder 2672:2672 <> k:24
+R2698:2701 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2694:2696 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R2693:2693 autoprover_correctness_simple <> k:24 var
+R2703:2706 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R2702:2702 autoprover_correctness_simple <> k:24 var
+R2707:2712 Coq.Strings.String <> length def
+R2714:2720 autoprover_correctness_simple <> results:23 var

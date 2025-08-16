@@ -1,0 +1,330 @@
+DIGEST 9b9c0c45498a65259e8019841dfdd204
+Fnvs_correctness_simple
+R120:133 Coq.Lists.List <> <> lib
+R151:165 Coq.Arith.Arith <> <> lib
+R175:187 Coq.Lists.List ListNotations <> mod
+def 243:249 <> Address
+R254:256 Coq.Init.Datatypes <> nat ind
+def 270:276 <> BotName
+R281:283 Coq.Init.Datatypes <> nat ind
+ind 297:305 <> BotStatus
+constr 321:326 <> Active
+constr 330:333 <> Idle
+constr 337:340 <> Busy
+constr 344:347 <> Dead
+constr 419:428 <> mkNVSEntry
+rec 400:407 <> NVSEntry
+proj 434:437 <> name
+proj 452:458 <> address
+proj 473:478 <> status
+R441:447 nvs_correctness_simple <> BotName def
+R462:468 nvs_correctness_simple <> Address def
+R482:490 nvs_correctness_simple <> BotStatus ind
+def 508:515 <> Registry
+R520:523 Coq.Init.Datatypes <> list ind
+R533:535 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R526:532 nvs_correctness_simple <> BotName def
+R536:543 nvs_correctness_simple <> NVSEntry rec
+def 655:674 <> no_address_collision
+R681:688 nvs_correctness_simple <> Registry def
+binder 677:677 <> r:7
+binder 710:711 <> n1:8
+binder 713:714 <> n2:9
+binder 716:717 <> e1:10
+binder 719:720 <> e2:11
+R740:747 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R727:728 Coq.Lists.List <> In def
+R739:739 nvs_correctness_simple <> r:7 var
+R730:730 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R733:734 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R737:737 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R731:732 nvs_correctness_simple <> n1:8 var
+R735:736 nvs_correctness_simple <> e1:10 var
+R761:768 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R748:749 Coq.Lists.List <> In def
+R760:760 nvs_correctness_simple <> r:7 var
+R751:751 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R754:755 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R758:758 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R752:753 nvs_correctness_simple <> n2:9 var
+R756:757 nvs_correctness_simple <> e2:11 var
+R777:784 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R771:774 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R769:770 nvs_correctness_simple <> n1:8 var
+R775:776 nvs_correctness_simple <> n2:9 var
+R795:798 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R785:791 nvs_correctness_simple <> address proj
+R793:794 nvs_correctness_simple <> e1:10 var
+R799:805 nvs_correctness_simple <> address proj
+R807:808 nvs_correctness_simple <> e2:11 var
+def 866:875 <> valid_dest
+R882:889 nvs_correctness_simple <> Registry def
+binder 878:878 <> r:12
+R900:906 nvs_correctness_simple <> Address def
+binder 893:896 <> addr:13
+R921:927 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R931:932 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 928:928 <> n:14
+binder 930:930 <> e:15
+R944:947 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R933:934 Coq.Lists.List <> In def
+R943:943 nvs_correctness_simple <> r:12 var
+R936:936 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R938:939 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R941:941 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R937:937 nvs_correctness_simple <> n:14 var
+R940:940 nvs_correctness_simple <> e:15 var
+R964:967 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R957:959 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R948:954 nvs_correctness_simple <> address proj
+R956:956 nvs_correctness_simple <> e:15 var
+R960:963 nvs_correctness_simple <> addr:13 var
+R976:979 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R968:973 nvs_correctness_simple <> status proj
+R975:975 nvs_correctness_simple <> e:15 var
+R980:983 nvs_correctness_simple <> Dead constr
+prf 1095:1113 <> empty_registry_safe
+R1117:1136 nvs_correctness_simple <> no_address_collision def
+R1138:1139 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1158:1177 nvs_correctness_simple <> no_address_collision def
+prf 1273:1299 <> add_unique_preserves_safety
+binder 1312:1312 <> r:16
+binder 1314:1314 <> n:17
+binder 1316:1316 <> e:18
+R1345:1352 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1323:1342 nvs_correctness_simple <> no_address_collision def
+R1344:1344 nvs_correctness_simple <> r:16 var
+R1353:1353 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1408:1416 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1361:1362 <> n':19
+binder 1364:1365 <> e':20
+R1381:1384 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1368:1369 Coq.Lists.List <> In def
+R1380:1380 nvs_correctness_simple <> r:16 var
+R1371:1371 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1374:1375 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1378:1378 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1372:1373 nvs_correctness_simple <> n':19 var
+R1376:1377 nvs_correctness_simple <> e':20 var
+R1394:1397 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1385:1391 nvs_correctness_simple <> address proj
+R1393:1393 nvs_correctness_simple <> e:18 var
+R1398:1404 nvs_correctness_simple <> address proj
+R1406:1407 nvs_correctness_simple <> e':20 var
+R1417:1436 nvs_correctness_simple <> no_address_collision def
+R1445:1448 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1439:1439 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1441:1442 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1444:1444 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1440:1440 nvs_correctness_simple <> n:17 var
+R1443:1443 nvs_correctness_simple <> e:18 var
+R1449:1449 nvs_correctness_simple <> r:16 var
+R1469:1488 nvs_correctness_simple <> no_address_collision def
+prf 2051:2065 <> lookup_succeeds
+binder 2078:2078 <> r:21
+binder 2080:2080 <> n:22
+binder 2082:2082 <> e:23
+R2122:2129 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2090:2091 Coq.Lists.List <> In def
+R2101:2103 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2094:2100 nvs_correctness_simple <> BotName def
+R2104:2111 nvs_correctness_simple <> NVSEntry rec
+R2114:2114 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2116:2117 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2119:2119 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2115:2115 nvs_correctness_simple <> n:22 var
+R2118:2118 nvs_correctness_simple <> e:23 var
+R2121:2121 nvs_correctness_simple <> r:21 var
+R2130:2136 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2139:2140 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2137:2138 <> e':24
+R2142:2143 Coq.Lists.List <> In def
+R2153:2155 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2146:2152 nvs_correctness_simple <> BotName def
+R2156:2163 nvs_correctness_simple <> NVSEntry rec
+R2166:2166 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2168:2169 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2172:2172 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2167:2167 nvs_correctness_simple <> n:22 var
+R2170:2171 nvs_correctness_simple <> e':24 var
+R2174:2174 nvs_correctness_simple <> r:21 var
+def 2291:2300 <> PacketSize
+R2305:2307 Coq.Init.Datatypes <> nat ind
+constr 2328:2335 <> mkPacket
+rec 2318:2323 <> Packet
+proj 2341:2344 <> size
+proj 2362:2365 <> dest
+R2348:2357 nvs_correctness_simple <> PacketSize def
+R2369:2375 nvs_correctness_simple <> Address def
+prf 2438:2452 <> packet_delivery
+binder 2465:2465 <> r:28
+binder 2467:2467 <> p:29
+R2495:2502 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2474:2483 nvs_correctness_simple <> valid_dest def
+R2485:2485 nvs_correctness_simple <> r:28 var
+R2488:2491 nvs_correctness_simple <> dest proj
+R2493:2493 nvs_correctness_simple <> p:29 var
+R2503:2509 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2519:2520 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2510:2518 <> delivered:30
+R2530:2532 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2521:2529 nvs_correctness_simple <> delivered:30 var
+R2533:2536 Coq.Init.Datatypes <> true constr
+R2577:2580 Coq.Init.Datatypes <> true constr
+R2577:2580 Coq.Init.Datatypes <> true constr
+def 2665:2674 <> MemorySize
+R2679:2681 Coq.Init.Datatypes <> nat ind
+constr 2705:2715 <> mkMemRegion
+rec 2692:2700 <> MemRegion
+proj 2721:2728 <> capacity
+proj 2746:2749 <> used
+R2732:2741 nvs_correctness_simple <> MemorySize def
+R2753:2762 nvs_correctness_simple <> MemorySize def
+def 2780:2787 <> mem_safe
+R2794:2802 nvs_correctness_simple <> MemRegion rec
+binder 2790:2790 <> m:34
+R2823:2826 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R2817:2820 nvs_correctness_simple <> used proj
+R2822:2822 nvs_correctness_simple <> m:34 var
+R2827:2834 nvs_correctness_simple <> capacity proj
+R2836:2836 nvs_correctness_simple <> m:34 var
+prf 2899:2912 <> mem_write_safe
+binder 2925:2925 <> m:35
+binder 2927:2928 <> sz:36
+R2945:2952 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2935:2942 nvs_correctness_simple <> mem_safe def
+R2944:2944 nvs_correctness_simple <> m:35 var
+R2978:2985 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2964:2967 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R2959:2961 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2953:2956 nvs_correctness_simple <> used proj
+R2958:2958 nvs_correctness_simple <> m:35 var
+R2962:2963 nvs_correctness_simple <> sz:36 var
+R2968:2975 nvs_correctness_simple <> capacity proj
+R2977:2977 nvs_correctness_simple <> m:35 var
+R2986:2993 nvs_correctness_simple <> mem_safe def
+R2996:3006 nvs_correctness_simple <> mkMemRegion constr
+R3009:3016 nvs_correctness_simple <> capacity proj
+R3018:3018 nvs_correctness_simple <> m:35 var
+R3028:3030 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R3022:3025 nvs_correctness_simple <> used proj
+R3027:3027 nvs_correctness_simple <> m:35 var
+R3031:3032 nvs_correctness_simple <> sz:36 var
+R3082:3089 nvs_correctness_simple <> mem_safe def
+def 3185:3188 <> Vote
+R3193:3195 Coq.Init.Datatypes <> nat ind
+def 3209:3215 <> BotVote
+R3228:3230 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3221:3227 nvs_correctness_simple <> BotName def
+R3231:3234 nvs_correctness_simple <> Vote def
+prf 3297:3316 <> consensus_terminates
+R3337:3340 Coq.Init.Datatypes <> list ind
+R3342:3348 nvs_correctness_simple <> BotVote def
+binder 3329:3333 <> votes:37
+R3355:3361 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3382:3389 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3371:3376 Coq.Init.Datatypes <> option ind
+R3378:3381 nvs_correctness_simple <> Vote def
+binder 3362:3367 <> result:38
+R3396:3398 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3390:3395 nvs_correctness_simple <> result:38 var
+R3405:3409 nvs_correctness_simple <> votes:37 var
+R3433:3434 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3439:3442 Coq.Init.Datatypes <> None constr
+R3462:3465 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3471:3474 Coq.Init.Datatypes <> Some constr
+R3477:3479 Coq.Init.Datatypes <> snd def
+R3556:3559 Coq.Init.Datatypes <> None constr
+R3556:3559 Coq.Init.Datatypes <> None constr
+R3587:3590 Coq.Init.Datatypes <> Some constr
+R3593:3595 Coq.Init.Datatypes <> snd def
+R3587:3590 Coq.Init.Datatypes <> Some constr
+R3593:3595 Coq.Init.Datatypes <> snd def
+ind 3679:3689 <> SystemState
+constr 3698:3705 <> Starting
+constr 3711:3717 <> Running
+constr 3723:3731 <> Completed
+def 3746:3753 <> progress
+R3764:3774 nvs_correctness_simple <> SystemState ind
+binder 3756:3757 <> s1:42
+binder 3759:3760 <> s2:43
+R3799:3800 nvs_correctness_simple <> s2:43 var
+R3795:3796 nvs_correctness_simple <> s1:42 var
+R3811:3818 nvs_correctness_simple <> Starting constr
+R3821:3827 nvs_correctness_simple <> Running constr
+R3832:3835 Coq.Init.Logic <> True ind
+R3841:3847 nvs_correctness_simple <> Running constr
+R3850:3858 nvs_correctness_simple <> Completed constr
+R3863:3866 Coq.Init.Logic <> True ind
+R3872:3879 nvs_correctness_simple <> Starting constr
+R3882:3890 nvs_correctness_simple <> Completed constr
+R3895:3898 Coq.Init.Logic <> True ind
+R3912:3916 Coq.Init.Logic <> False ind
+prf 3973:3987 <> system_progress
+binder 4000:4000 <> s:46
+R4003:4009 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4012:4013 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4010:4011 <> s':47
+R4028:4031 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4015:4018 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R4014:4014 nvs_correctness_simple <> s:46 var
+R4019:4027 nvs_correctness_simple <> Completed constr
+R4032:4039 nvs_correctness_simple <> progress def
+R4041:4041 nvs_correctness_simple <> s:46 var
+R4043:4044 nvs_correctness_simple <> s':47 var
+R4091:4097 nvs_correctness_simple <> Running constr
+R4091:4097 nvs_correctness_simple <> Running constr
+R4123:4123 Coq.Init.Logic <> I constr
+R4123:4123 Coq.Init.Logic <> I constr
+R4137:4145 nvs_correctness_simple <> Completed constr
+R4137:4145 nvs_correctness_simple <> Completed constr
+R4171:4171 Coq.Init.Logic <> I constr
+R4171:4171 Coq.Init.Logic <> I constr
+R4185:4193 nvs_correctness_simple <> Completed constr
+R4185:4193 nvs_correctness_simple <> Completed constr
+prf 4304:4321 <> nvs_system_correct
+binder 4334:4334 <> r:48
+binder 4336:4336 <> p:49
+binder 4338:4338 <> m:50
+R4367:4374 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4345:4364 nvs_correctness_simple <> no_address_collision def
+R4366:4366 nvs_correctness_simple <> r:48 var
+R4396:4403 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4375:4384 nvs_correctness_simple <> valid_dest def
+R4386:4386 nvs_correctness_simple <> r:48 var
+R4389:4392 nvs_correctness_simple <> dest proj
+R4394:4394 nvs_correctness_simple <> p:49 var
+R4414:4421 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4404:4411 nvs_correctness_simple <> mem_safe def
+R4413:4413 nvs_correctness_simple <> m:50 var
+R4451:4458 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4437:4440 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R4428:4430 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4422:4425 nvs_correctness_simple <> used proj
+R4427:4427 nvs_correctness_simple <> m:50 var
+R4431:4434 nvs_correctness_simple <> size proj
+R4436:4436 nvs_correctness_simple <> p:49 var
+R4441:4448 nvs_correctness_simple <> capacity proj
+R4450:4450 nvs_correctness_simple <> m:50 var
+R4459:4465 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4471:4478 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4466:4467 <> r':51
+binder 4469:4470 <> m':52
+R4502:4511 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4479:4498 nvs_correctness_simple <> no_address_collision def
+R4500:4501 nvs_correctness_simple <> r':51 var
+R4512:4519 nvs_correctness_simple <> mem_safe def
+R4521:4522 nvs_correctness_simple <> m':52 var
+R4606:4616 nvs_correctness_simple <> mkMemRegion constr
+R4619:4626 nvs_correctness_simple <> capacity proj
+R4638:4640 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4632:4635 nvs_correctness_simple <> used proj
+R4641:4644 nvs_correctness_simple <> size proj
+R4606:4616 nvs_correctness_simple <> mkMemRegion constr
+R4619:4626 nvs_correctness_simple <> capacity proj
+R4638:4640 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4632:4635 nvs_correctness_simple <> used proj
+R4641:4644 nvs_correctness_simple <> size proj
+R4686:4699 nvs_correctness_simple <> mem_write_safe thm
+R4686:4699 nvs_correctness_simple <> mem_write_safe thm
+R4766:4783 nvs_correctness_simple <> nvs_system_correct thm

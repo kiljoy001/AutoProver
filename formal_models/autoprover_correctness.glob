@@ -1,0 +1,222 @@
+DIGEST 665f81b62c8860b64bcff55a33748455
+Fautoprover_correctness
+R214:217 Coq.Lists.List <> <> lib
+R235:239 Coq.Arith.Arith <> <> lib
+R257:260 Coq.Bool.Bool <> <> lib
+R278:283 Coq.Strings.String <> <> lib
+R301:309 Coq.Logic.Decidable <> <> lib
+R327:329 Coq.micromega.Lia <> <> lib
+R339:351 Coq.Lists.List ListNotations <> mod
+def 455:458 <> Goal
+R463:468 Coq.Strings.String <> string ind
+ind 512:518 <> BotType
+constr 534:543 <> CoqGym_CPU
+constr 549:558 <> CoqGym_GPU
+constr 566:578 <> ProverBot9001
+constr 584:592 <> TacticToe
+constr 598:606 <> CoqHammer
+constr 659:671 <> mkProofResult
+rec 637:647 <> ProofResult
+proj 677:682 <> tactic
+proj 696:705 <> confidence
+proj 736:743 <> verified
+proj 755:764 <> bot_source
+proj 779:792 <> execution_time
+R686:691 Coq.Strings.String <> string ind
+R709:711 Coq.Init.Datatypes <> nat ind
+R747:750 Coq.Init.Datatypes <> bool ind
+R768:774 autoprover_correctness <> BotType ind
+R796:798 Coq.Init.Datatypes <> nat ind
+constr 891:897 <> mkBlock
+rec 867:879 <> GhostDAGBlock
+proj 903:910 <> block_id
+proj 921:932 <> proof_result
+proj 951:963 <> parent_blocks
+proj 979:985 <> is_blue
+proj 997:1005 <> timestamp
+R914:916 Coq.Init.Datatypes <> nat ind
+R936:946 autoprover_correctness <> ProofResult rec
+R967:970 Coq.Init.Datatypes <> list ind
+R972:974 Coq.Init.Datatypes <> nat ind
+R989:992 Coq.Init.Datatypes <> bool ind
+R1009:1011 Coq.Init.Datatypes <> nat ind
+constr 1069:1075 <> mkState
+rec 1043:1057 <> AutoProverState
+proj 1081:1091 <> active_bots
+proj 1111:1120 <> goal_queue
+proj 1137:1151 <> ghostdag_blocks
+proj 1177:1198 <> ocaml_bridge_available
+proj 1210:1230 <> consensus_k_parameter
+R1095:1098 Coq.Init.Datatypes <> list ind
+R1100:1106 autoprover_correctness <> BotType ind
+R1124:1127 Coq.Init.Datatypes <> list ind
+R1129:1132 autoprover_correctness <> Goal def
+R1155:1158 Coq.Init.Datatypes <> list ind
+R1160:1172 autoprover_correctness <> GhostDAGBlock rec
+R1202:1205 Coq.Init.Datatypes <> bool ind
+R1234:1236 Coq.Init.Datatypes <> nat ind
+def 1344:1358 <> bot_can_execute
+R1367:1373 autoprover_correctness <> BotType ind
+binder 1361:1363 <> bot:21
+R1384:1387 autoprover_correctness <> Goal def
+binder 1377:1380 <> goal:22
+R1408:1410 autoprover_correctness <> bot:21 var
+R1421:1430 autoprover_correctness <> CoqGym_CPU constr
+R1435:1438 Coq.Init.Logic <> True ind
+R1472:1481 autoprover_correctness <> CoqGym_GPU constr
+R1486:1489 Coq.Init.Logic <> True ind
+R1531:1543 autoprover_correctness <> ProverBot9001 constr
+R1548:1551 Coq.Init.Logic <> True ind
+R1582:1590 autoprover_correctness <> TacticToe constr
+R1595:1598 Coq.Init.Logic <> True ind
+R1633:1641 autoprover_correctness <> CoqHammer constr
+R1646:1649 Coq.Init.Logic <> True ind
+ax 1694:1718 <> decidable_bot_can_execute
+R1729:1732 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1722:1728 autoprover_correctness <> BotType ind
+R1737:1740 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1733:1736 autoprover_correctness <> Goal def
+R1741:1744 Coq.Init.Datatypes <> bool ind
+ax 1753:1763 <> execute_bot
+R1774:1777 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1767:1773 autoprover_correctness <> BotType ind
+R1782:1785 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1778:1781 autoprover_correctness <> Goal def
+R1786:1796 autoprover_correctness <> ProofResult rec
+def 1871:1880 <> filter_map
+binder 1883:1883 <> A:26
+binder 1885:1885 <> B:27
+R1901:1904 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1900:1900 autoprover_correctness <> A:26 var
+R1905:1910 Coq.Init.Datatypes <> option ind
+R1912:1912 autoprover_correctness <> B:27 var
+binder 1896:1896 <> f:28
+R1920:1923 Coq.Init.Datatypes <> list ind
+R1925:1925 autoprover_correctness <> A:26 var
+binder 1916:1916 <> l:29
+R1930:1933 Coq.Init.Datatypes <> list ind
+R1935:1935 autoprover_correctness <> B:27 var
+R1948:1948 autoprover_correctness <> l:29 var
+R1959:1960 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1965:1966 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1973:1976 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1996:1996 autoprover_correctness <> f:28 var
+R2013:2016 Coq.Init.Datatypes <> Some constr
+R2024:2027 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2028:2037 autoprover_correctness <> filter_map:30 def
+R2039:2039 autoprover_correctness <> f:28 var
+R2052:2055 Coq.Init.Datatypes <> None constr
+R2060:2069 autoprover_correctness <> filter_map:30 def
+R2071:2071 autoprover_correctness <> f:28 var
+def 2105:2113 <> id_option
+binder 2116:2116 <> A:32
+R2131:2136 Coq.Init.Datatypes <> option ind
+R2138:2138 autoprover_correctness <> A:32 var
+binder 2127:2127 <> x:33
+R2143:2148 Coq.Init.Datatypes <> option ind
+R2150:2150 autoprover_correctness <> A:32 var
+R2155:2155 autoprover_correctness <> x:33 var
+def 2205:2222 <> parallel_execution
+R2232:2235 Coq.Init.Datatypes <> list ind
+R2237:2243 autoprover_correctness <> BotType ind
+binder 2225:2228 <> bots:34
+R2254:2257 autoprover_correctness <> Goal def
+binder 2247:2250 <> goal:35
+R2265:2268 Coq.Init.Datatypes <> list ind
+R2271:2276 Coq.Init.Datatypes <> option ind
+R2278:2288 autoprover_correctness <> ProofResult rec
+R2296:2298 Coq.Lists.List <> map def
+R2411:2414 autoprover_correctness <> bots:34 var
+binder 2305:2307 <> bot:36
+R2320:2344 autoprover_correctness <> decidable_bot_can_execute prfax
+R2346:2348 autoprover_correctness <> bot:36 var
+R2350:2353 autoprover_correctness <> goal:35 var
+R2402:2405 Coq.Init.Datatypes <> None constr
+R2365:2368 Coq.Init.Datatypes <> Some constr
+R2371:2381 autoprover_correctness <> execute_bot prfax
+R2383:2385 autoprover_correctness <> bot:36 var
+R2387:2390 autoprover_correctness <> goal:35 var
+def 2462:2479 <> select_blue_blocks
+R2491:2494 Coq.Init.Datatypes <> list ind
+R2496:2508 autoprover_correctness <> GhostDAGBlock rec
+binder 2482:2487 <> blocks:37
+R2516:2518 Coq.Init.Datatypes <> nat ind
+binder 2512:2512 <> k:38
+R2523:2526 Coq.Init.Datatypes <> list ind
+R2528:2540 autoprover_correctness <> GhostDAGBlock rec
+R2553:2558 autoprover_correctness <> blocks:37 var
+R2569:2570 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R2575:2576 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R2583:2586 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2606:2609 Coq.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R2605:2605 autoprover_correctness <> k:38 var
+R2637:2643 autoprover_correctness <> is_blue proj
+R2697:2714 autoprover_correctness <> select_blue_blocks:39 def
+R2721:2721 autoprover_correctness <> k:38 var
+R2652:2655 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2656:2673 autoprover_correctness <> select_blue_blocks:39 def
+R2682:2682 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R2681:2681 autoprover_correctness <> k:38 var
+R2617:2618 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+def 2742:2759 <> ghostdag_consensus
+R2772:2775 Coq.Init.Datatypes <> list ind
+R2777:2787 autoprover_correctness <> ProofResult rec
+binder 2762:2768 <> results:41
+R2795:2797 Coq.Init.Datatypes <> nat ind
+binder 2791:2791 <> k:42
+R2802:2807 Coq.Init.Datatypes <> option ind
+R2809:2819 autoprover_correctness <> ProofResult rec
+R2840:2842 Coq.Lists.List <> map def
+R2877:2883 autoprover_correctness <> results:41 var
+binder 2849:2849 <> r:43
+R2854:2860 autoprover_correctness <> mkBlock constr
+R2864:2864 autoprover_correctness <> r:43 var
+R2866:2867 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R2869:2872 Coq.Init.Datatypes <> true constr
+binder 2830:2835 <> blocks:44
+R2909:2926 autoprover_correctness <> select_blue_blocks def
+R2928:2933 autoprover_correctness <> blocks:44 var
+R2935:2935 autoprover_correctness <> k:42 var
+binder 2894:2904 <> blue_blocks:45
+R2948:2958 autoprover_correctness <> blue_blocks:45 var
+R2969:2970 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R2975:2978 Coq.Init.Datatypes <> None constr
+R2985:2988 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2994:2997 Coq.Init.Datatypes <> Some constr
+R3002:3013 autoprover_correctness <> proof_result proj
+def 3067:3093 <> ocaml_coordinated_execution
+R3104:3118 autoprover_correctness <> AutoProverState rec
+binder 3096:3100 <> state:47
+R3129:3132 autoprover_correctness <> Goal def
+binder 3122:3125 <> goal:48
+R3140:3145 Coq.Init.Datatypes <> option ind
+R3147:3157 autoprover_correctness <> ProofResult rec
+R3174:3195 autoprover_correctness <> ocaml_bridge_available proj
+R3167:3171 autoprover_correctness <> state:47 var
+R3406:3409 Coq.Init.Datatypes <> None constr
+R3222:3239 autoprover_correctness <> parallel_execution def
+R3248:3258 autoprover_correctness <> active_bots proj
+R3241:3245 autoprover_correctness <> state:47 var
+R3261:3264 autoprover_correctness <> goal:48 var
+binder 3211:3217 <> results:49
+R3297:3306 autoprover_correctness <> filter_map def
+R3318:3324 autoprover_correctness <> results:49 var
+R3308:3316 autoprover_correctness <> id_option def
+binder 3277:3292 <> verified_results:50
+R3333:3350 autoprover_correctness <> ghostdag_consensus def
+R3352:3367 autoprover_correctness <> verified_results:50 var
+R3376:3396 autoprover_correctness <> consensus_k_parameter proj
+R3369:3373 autoprover_correctness <> state:47 var
+prf 3545:3583 <> parallel_execution_preserves_capability
+R3604:3607 Coq.Init.Datatypes <> list ind
+R3609:3615 autoprover_correctness <> BotType ind
+binder 3597:3600 <> bots:51
+R3626:3629 autoprover_correctness <> Goal def
+binder 3619:3622 <> goal:52
+R3674:3676 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3637:3642 Coq.Strings.String <> length def
+R3645:3662 autoprover_correctness <> parallel_execution def
+R3664:3667 autoprover_correctness <> bots:51 var
+R3669:3672 autoprover_correctness <> goal:52 var
+R3677:3682 Coq.Strings.String <> length def
+R3684:3687 autoprover_correctness <> bots:51 var
