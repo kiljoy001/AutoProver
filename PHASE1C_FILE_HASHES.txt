@@ -1,0 +1,6 @@
+0dee285ad672e18567a6153d480dad6987737a7dda02c41449a99e092bfb7504  consolidated_comprehensive_paper.pdf
+a3d3384bf452a688f864f98fb79c30680841f69b769f0ae5217023c0a837562f  PHASE1C_BREAKTHROUGH_SUMMARY.md
+784aadeebabed0a91df57779926cc0a69d26732998bd28843d6c066b10ffeb38  demo_cryptographic_proofs.md
+62f53ba67cc8588b251a39822d5a96e276d3acea94efe0ce683db88e114872be  schnorr_total_annihilation.v
+Thu Jan  1 00:00:00 GMT 1970
+Author: Scott J. Guyton <scott@rentonsoftworks.com>
